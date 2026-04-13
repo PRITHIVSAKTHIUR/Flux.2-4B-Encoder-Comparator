@@ -2,6 +2,8 @@
 
 Flux.2-4B-Encoder-Comparator is an experimental, dual-pipeline application designed to perform direct, side-by-side visual evaluations of the FLUX.2-klein-4B model using two different Variational Autoencoders (VAEs). By executing the standard decoder and the newly introduced small-decoder concurrently, the tool allows developers and researchers to instantly observe differences in artifacting, detail retention, and color processing. The application features a deeply customized, Ubuntu-inspired web interface built with pure HTML, CSS, and JavaScript served via FastAPI. It supports both text-to-image generation and image-to-image editing, providing an interactive slider for real-time comparative analysis and batch ZIP downloading for offline review.
 
+<img width="1538" height="810" alt="Screenshot 2026-04-13 at 08-48-36 Flux 2 4B Encoder Comparator - a Hugging Face Space by prithivMLmods" src="https://github.com/user-attachments/assets/0232cc6c-6696-459c-8354-255109c1079c" />
+
 ### **Key Features**
 
 * **Concurrent Dual Inference:** Simultaneously runs the standard FLUX.2-klein-4B pipeline and the FLUX.2-klein-4B pipeline equipped with the `FLUX.2-small-decoder` VAE using Python's ThreadPoolExecutor, maximizing GPU utility and minimizing wait times.
